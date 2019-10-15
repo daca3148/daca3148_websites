@@ -10,11 +10,11 @@
 
 <body>
     <br>
-    <a href="mypage.HTML">mypage</a>
+    <a href="/mypage.HTML">mypage</a>
     <br>
-    <a href="mypage_bootstrap.HTML">mypage_bootstrap</a>
+    <a href="/mypage_bootstrap.HTML">mypage_bootstrap</a>
     <br>
-    <a href="form.HTML">form</a>
+    <a href="/form.HTML">form</a>
 
 </body>
 
