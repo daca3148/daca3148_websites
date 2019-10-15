@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms Page</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../resources/css/my_style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .content {
+            max-width: 500px;
+            margin: 20px;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+
+<body class="center-wrapped">
+    <form>
+        <div class="form-group row container-fluid mt-3">
+            <div class="col container-fluid mt-3 form-group">
+                <h1>Add an Article!</h1>
+            </div>
+        </div>
+        <div class="form-group row container-fluid mt-3">
+            <div class="col container-fluid mt-3 form-group">
+                <label for="ArticleTitle">Article Title</label>
+                <input class="form-control" id="ArticleTitle" placeholder="Enter Title">
+            </div>
+        </div>
+        <div class="form-group row container-fluid mt-3">
+            <div class="col container-fluid mt-3 form-group">
+                <label for="ArticleAuthor">Article Author</label>
+                <input class="form-control" id="ArticleAuthor" placeholder="Enter Author">
+            </div>
+        </div>
+
+        <div class="container-fluid row form-group">
+            <div class="col form-group container-fluid">
+                <h3>Add file:</h3>
+            </div>
+            <div class="col form-group container-fluid">
+                <h3>Pages</h3>
+            </div>
+        </div>
+        <div class="row container-fluid mt-3 form-group">
+            <div class="col container-fluid mt-3 form-group">
+                <input type="file" id="myFile" name="filename2">
+            </div>
+            <div class="col container-fluid mt-3 form-group">
+                <label for="sel1">Select list (select one):</label>
+                <select class="form-control" id="sel1">
+              <option>Academics</option>
+              <option>Research</option>
+              <option>Questions</option>
+              <option>Fun</option>
+            </select>
+            </div>
+        </div>
+        <div class="container-fluid row form-group">
+            <div class="col form-group container-fluid">
+                <h3>Text Entry</h3>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="container-fluid row form-group">
+            <div class="col form-group container-fluid">
+                <h3>Select Tags</h3>
+            </div>
+            <div class="col form-group container-fluid">
+                <h3>Visibility</h3>
+                <h6>(On for Public, Off for Private)</h6>
+            </div>
+        </div>
+        <div class="row container-fluid mt-3 form-group">
+            <div class="col container-fluid mt-3 form-group">
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check1">
+                              <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" >Python
+                            </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check2">
+                              <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">C++
+                            </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check3">
+                              <input type="checkbox" class="form-check-input" id="check3" name="vehicle3" value="something" >Java
+                            </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check4">
+                                  <input type="checkbox" class="form-check-input" id="check4" name="vehicle4" value="something" >Java
+                                </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check5">
+                                  <input type="checkbox" class="form-check-input" id="check5" name="vehicle5" value="something" >Perl
+                                </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check6">
+                                      <input type="checkbox" class="form-check-input" id="check6" name="vehicle6" value="something" >Scala
+                                    </label>
+                </div>
+            </div>
+            <div class="col container-fluid mt-3 form-group">
+
+                <label class="switch" for="check7">
+                            <input type="checkbox" checked class="form-check-input" id="check7" name="vehicle7" value="something" >
+                            <span class="slider round"></span>
+                          </label>
+            </div>
+        </div>
+        <div class="row container-fluid mt-3 form-group">
+            <div class="col container-fluid mt-3 form-group">
+                <h3>Login to finish submitting!</h3>
+            </div>
+        </div>
+        <div class="row container-fluid mt-3 form-group">
+            <div class="form-group col">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <div class="form-check row">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                            Remember Me
+                          </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-3 container-fluid row form-group">
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+
+
+</body>
+
+</html>
