@@ -11,11 +11,11 @@
 <body>
     <p>change 1<p>
     <br>
-    <a href="/master/o/mypage.html">mypage</a>
+    <a href="mypage.HTML">mypage</a>
     <br>
     <a href="mypage_bootstrap.HTML">mypage_bootstrap</a>
     <br>
-    <a href="https://github.com/daca3148/hw1.github.io/blob/master/form.HTML">form</a>
+    <a href="form.HTML">form</a>
 
 </body>
 
