@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p>change 1<p>
+    <p>HW1 Websites<p>
     <br>
     <a href="mypage.HTML">mypage</a>
     <br>
