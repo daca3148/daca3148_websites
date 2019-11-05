@@ -16,6 +16,8 @@
     <a href="mypage_bootstrap.HTML">mypage_bootstrap</a>
     <br>
     <a href="form.HTML">form</a>
+    <br>
+    <a href="tic-tac-toe.HTML">Tic Tac Toe Game</a>
 
 </body>
 
