@@ -17,7 +17,7 @@
     <br>
     <a href="form.HTML">form</a>
     <br>
-    <a href="tic-tac-toe.htmlL">Tic Tac Toe Game</a>
+    <a href="tic-tac-toe.HTML">Tic Tac Toe Game</a>
 
 </body>
 
